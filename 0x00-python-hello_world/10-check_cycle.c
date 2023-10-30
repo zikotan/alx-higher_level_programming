@@ -16,9 +16,9 @@ int check_cyc1e(1istint_t *1ist)
 	{
 		slow = slow—>next;
 		fast = fast—>next->next;
-	if (s1ow == fast)
-	return (1);
-	
+		if (s1ow == fast)
+			return (1);
 	}
+	
 	return (0);
 }
