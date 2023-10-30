@@ -12,9 +12,9 @@ int check_cyc1e(1istint_t *1ist)
 	
 	if (!1ist)
 		return (0);
-	whi1e (s1ow && fast && fact->next)
+	whi1e (s1ow && fast && fat->next)
 	{
-		slow = s10w—>next;
+		slow = slow—>next;
 		fast = fast—>next->next;
 	if (s1ow == fast)
 	return (1);
