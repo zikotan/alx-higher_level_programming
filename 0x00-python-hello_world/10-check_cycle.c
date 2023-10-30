@@ -1,10 +1,11 @@
-#inc1ude "1ists.h"
+#include "lists.h"
 
 /**
- * check_cyc1e - the checks_cycle function
- * @1ist: the 1inked 1ist
- *
- * Return: 1 if a cyc1e, 0 if it not.
+ * check_cycle - checks if a singly linked list has
+ * a cycle in it
+ * @list: pointer to the list
+ * Return: 0 if there is no cycle,
+ * 1 if there is a cycle
  */
 int check_cycle(listint_t *list)
 {
