@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 str = "Holberton School"
-fullStr = str + str + str + str[:9]
+fullStr = str + str + str + '\n' + str[:9]
 print(fullStr)
