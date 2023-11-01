@@ -8,7 +8,7 @@ last = int(last)
 if number < 0:
     last = last * (-1)
 print("Last digit of %d" % number, end=" ")
-print("is %s" % last, end=" ")
+print("is %d" % last, end=" ")
 if last > 5:
     print("and is greater than 5")
 elif last == 0:
