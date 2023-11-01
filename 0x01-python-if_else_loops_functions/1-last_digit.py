@@ -4,9 +4,11 @@ number = random.randint(-10000, 10000)
 nbStr = str(number)
 for i in nbStr:
     last = i
+last = int(last)
+if number < 0:
+    last = last * (-1)
 print("Last digit of %d" % number, end=" ")
 print("is %s" % last, end=" ")
-last = int(last)
 if last > 5:
     print("and is greater than 5")
 elif last == 0:
