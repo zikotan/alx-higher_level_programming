@@ -1,21 +1,19 @@
 #!/usr/bin/node
 module.exports = class Rectangle {
-  constructor (w, h) {
-    if ((w < 1) || (h < 1)) {
-    } else if ((isNaN(w)) || (isNaN(h))) {
-    } else {
-      this.width = w;
-      this.height = h;
+  constructor (x, y) {
+    if (x > 0 && y > 0) {
+      this.width = x;
+      this.height = y;
     }
   }
 
   print () {
-    for (let i = 0; i < this.height; i++) {
-      let row = '';
-      for (let j = 0; j < this.width; j++) {
-        row += 'X';
-      }
-      console.log(row);
+    const array = [];
+    for (let index = 0; index < this.width; index++) {
+      array.push('X');
+    }
+    for (let index = 0; index < this.height; index++) {
+      console.log(array.join(''));
     }
   }
 };
