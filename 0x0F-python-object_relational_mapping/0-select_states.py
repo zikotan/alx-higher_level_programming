@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""listing the database hbtn_0e_0_usa states"""
 
 if __name__ == '__main__':
 
