@@ -14,8 +14,7 @@ if __name__ == "__main__":
                           pool_pre_ping=True)
     Base.metadata.create_all(myEng)
 
-    mySession = Session(myEng)
-    for s in mySession.query(State)\
-        .filter(State.name.like('%a%')).order_by(State.id):
+    S = Session(myEng)
+    for s in S.query(State).filter(State.name.like('%a%')).order_by(State.id):
         print("{}: {}".format(s.id, s.name))
-    mySession.close()
+    S.close()
